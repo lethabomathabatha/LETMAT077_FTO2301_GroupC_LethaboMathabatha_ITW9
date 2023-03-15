@@ -231,7 +231,24 @@ a {
   margin-left: 7.5%;
 }
 
-
+@keyframes linkedin-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+img:hover {
+  animation-name: linkedin-logo;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+ 
+}
 
 /**********************************Mobile**************************************************/
 @media only screen and (max-width: 426px){
