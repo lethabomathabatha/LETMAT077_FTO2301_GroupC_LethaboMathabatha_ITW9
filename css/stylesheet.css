@@ -23,14 +23,28 @@
 
 #nav-1 {
   position: absolute;
-  display: grid;
-  grid-row: 20px;
+  display: flex;
   top: 10%;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
-  width: 20vw;
+  width: 100vw;
   text-align:left;
+}
+
+#nav-1 ul {
+  list-style: none;
+  width: 75vw;
+  background-color: rgba(255, 255, 255, 0.8);
+
+    /* add solution here */
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 2;
+    gap: 20px;
 }
 
 img {
@@ -156,6 +170,14 @@ a {
 #submit {
   background-color: rgba(162, 220, 237, 0.801);
   color: black;
+  border-radius: 12px 12px 12px 12px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: rgba(40, 153, 188, 0.966);
 }
 
 #headings {
