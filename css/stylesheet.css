@@ -1,12 +1,9 @@
-
-
 .full-page {
-  background-color: rgba(213, 225, 229, 0.516);
+  background-color: rgba(213, 225, 229, 0.227);
 }
 
 
 .grid-container {
-
   display: grid;
   grid-template-columns: 500px 970px;
   grid-gap: 20px;
@@ -37,7 +34,6 @@
   width: 75vw;
   background-color: rgba(255, 255, 255, 0.8);
 
-    /* add solution here */
     
     display: flex;
     flex-direction: row;
@@ -270,6 +266,11 @@ img:hover {
   animation-iteration-count: infinite;
   animation-play-state: running;
  
+}
+
+#subject {
+  font-size: larger;
+  font-weight:bold ;
 }
 
 /**********************************Mobile**************************************************/
