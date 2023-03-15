@@ -5,8 +5,14 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 500px 970px;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
+  grid-area: 
+  "header header"
+  "section section"
+  "sidebar sidebar"
+  "side side"
+  "footer footer";
 }
 
 header {
@@ -16,6 +22,7 @@ header {
   letter-spacing: 1px;
   color: black;
   padding-bottom: 20px;
+  grid-area: header;
 }
 
 .background {
@@ -66,53 +73,93 @@ header a {
   font-size: 2vw;
 }
 
+#introduction {
+  background-color: blue;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-column: 1 / 3;
+  gap: 40px;
+}
+
+.title {
+  background-color: aquamarine;
+  font-size: 2vw;
+  letter-spacing: 5px;
+  text-align: center;
+  flex: 3;
+  padding: 40px;
+}
+
+.intro{
+  background-color: darkorchid;
+  text-align: left;
+  flex: 3;
+  border-bottom: 8px solid black;
+  min-width: 180px;
+  padding: 40px;
+  padding-top: 20vh;
+  font-size: 2.5vw;
+}
 .title img {
   border: 3px solid black;
   width: 280px; 
   height: auto;
 }
-
-
 .title h1 {
-  font-size: 3vw;
-  text-align: left;
-  flex: 3;
+  
 }
 
-.intro{
-  text-align: center;
-  flex: 3;
-  border-bottom: 190px solid rgba(127, 135, 140, 0.366);
-  min-width: 180px;
-  padding: 1%;
+.second-section {
+  background-color: darkblue;
+  border-radius: 12px;
   font-size: 2vw;
-  grid-row: 1;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-column: 1 / 3;
+  gap: 40px;
+}
+
+.second-section li {
+  list-style: none;
+}
+
+.contacts {
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ 
+  color: black; 
+  padding: 2%;
+  font-weight: lighter;
+}
+
+.languages {
+  line-height: 1.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black; 
+  padding: 2%;
+  font-weight: lighter;
+}
+
+.third-section {
+  background-color: rgba(225, 187, 34, 0.968);
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-column: 1 / 3;
+  font-size: 2.5vw;
+  gap: 40px;
 }
 
 a {
   color: #000;
 }
 
-.left-side {
-  background-color: rgba(200, 200, 200, 0.456);
-  border-radius: 12px 12px 12px 12px;
-  padding: 20px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  font-size: 1.5vw;
-}
 
-.contacts {
-  line-height: 0.5;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 2vw; 
-  color: black; 
-  padding: 2%;
-  font-weight: lighter;
-}
+
+
 
 .skills {
   line-height: 0.5;
@@ -144,24 +191,19 @@ a {
 }
 
 .education {
-  background-color: rgba(200, 200, 200, 0.456);
+  background-color: rgba(228, 68, 138, 0.456);
   border-radius: 12px 12px 12px 12px;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-end: 4;
+  
+  grid-row: 9;
   padding: 2%;
 }
 
 .education1 {
-  font-size: 15px; 
-  color: black; 
+  
 }
 
 .education2 {
-  float: right;
-  width: 50%;
-  margin-top: -10%;
-  color: black;
+  
 }
 
 #forms {
@@ -201,6 +243,7 @@ a {
   font-size: 2vw; 
   color: rgba(58, 185, 221, 0.801); 
   font-weight: bold;
+  margin-left: 8%;
 }
 
 #headings2 {
@@ -231,6 +274,13 @@ a {
   font-size: 2vw; 
   color: rgba(58, 185, 221, 0.801); 
   font-weight: bold;
+}
+
+#headings7 {
+  font-size: 2vw; 
+  color: rgba(58, 185, 221, 0.801); 
+  font-weight: bold;
+  margin-left: 8%;
 }
 
 #details1 {
@@ -335,10 +385,10 @@ img:hover {
   
   }
 
-  .left-side {
-    margin-top: 40px;
-    background-color: rgba(178, 184, 209, 0.336);
-    border-radius: 12px 12px 12px 12px;
+  .left-side-2 {
+    margin-top: ;
+    background-color: rgb(220, 75, 159);
+    border-radius: 12px;
     padding: 10px;
     border-right: 3px solid black;
   }
@@ -765,7 +815,7 @@ input[type=radio] {
 
 /**********************************Laptop*************************************************/
 @media only screen and (min-width: 769px) and (max-width: 1440px){
-  .grid-container {
+  /*.grid-container {
     display: grid;
     grid-template-columns: 500px 1000px;
     grid-gap: 20px;
@@ -964,7 +1014,7 @@ input[type=radio] {
   border: 0px solid black;
 }
 
-}
+} */
 /**********************************Laptop Complete******************************************/
 
 /**********************************4K*************************************************/
