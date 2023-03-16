@@ -331,7 +331,6 @@ h3 {
 }
 
 footer {
-  
   display: grid;
   grid-template-columns: 1.5fr 2fr;
   color: black;
@@ -387,7 +386,41 @@ footer {
   height: 3vh;
 }
 
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: fuchsia;
+    grid-column: 1 / 3;
+  }
 
+.logos img {
+  width: 40px;
+  height: 40px;
+}
+
+.logos img:hover {
+  animation-name: logos;
+  animation-duration: 0.2s;
+  animation-iteration-count: 2;
+  animation-play-state:running;
+}
+
+@keyframes logos {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+  
 
 a {
   color: #000;
@@ -444,10 +477,9 @@ a {
 }
 
 #heading7 {
-  font-size: 4vw; 
-  color: rgba(58, 185, 221, 0.801); 
+  font-size: 3vw; 
+  color: rgba(48, 152, 180, 0.911); 
   font-weight: bold;
-  margin-left: -50%;
 }
 
 #headings8 {
@@ -468,53 +500,28 @@ a {
 }
 
 #details1 {
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   color: black;
 }
 
 #details2 {
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   color: black;
 }
 
 #details3 {
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   color: black;
 }
 
 #details4 {
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   color: black;
 }
 
-#logos {
-  border: 0px solid rgba(0, 0, 0, 0);
-  width: 180px; 
-  height: auto;
-  margin-left: 7.5%;
-  width: 180px; 
-  height: auto;
-  margin-left: 7.5%;
-}
 
-@keyframes linkedin-logo {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-img:hover {
-  animation-name: linkedin-logo;
-  animation-duration: 9s;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
- 
-}
+
+
 
 
 
