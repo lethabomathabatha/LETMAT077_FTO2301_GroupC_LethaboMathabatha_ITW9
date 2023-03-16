@@ -596,20 +596,97 @@ a {
   gap: 40px;
 }
 
+.third-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1;
+  font-size: 18vw;
+}
+
+.third-section li {
+  line-height: 12vh;
+}
+
+
+.fourth-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column: 1;
+  gap: 40px;
+  line-height: 2;
+  
+}
+
+.fourth-section h4 {
+  font-size: 20vw;
+  margin-bottom: -25px;
+}
+
+.fourth-section h5 {
+  font-size: 17vw;
+  margin-top: 40px;
+  color: rgba(24, 136, 164, 0.997);
+}
+
+.fourth-section p {
+  font-size: 17vw;
+  margin-top: 0px;
+}
+
+.experience {
+  border: 10px solid black;
+  border-radius: 20px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 20vw;
+  margin-top: 30px;
+  padding: 20px;
+  background-image:url(/images/form-image.png); 
+  background-position: center;
+  border-radius: 20px ;
+}
+
+#contact-form {
+  grid-column: 1;
+}
+
+#subject {
+  font-size: 18vw;
+
+}
+
+#submit {
+
+  font-size: 15vw;
+ 
+}
+
+
+
+#msg {
+  font-weight: bold;
+  text-align: center;
+  height: 50vh;
+  width: 200vw;
+}
+
+#email {
+  font-weight: bold;
+  width: 20vw;
+  height: 3vh;
+}
+
+
+
 #heading0 {
   font-size: 20vw; 
   color: rgba(48, 152, 180, 0.911); 
   font-weight: bold;
 }
 
-#details0 {
-  font-size: 18vw;
-  font-weight: bold;
-}
-
-#details0-1 {
-  font-size: 18vw;
-}
 
 #heading1 {
   font-size: 20vw; 
@@ -622,7 +699,58 @@ a {
 }
 
 
+#heading3 {
+  font-size: 20vw; 
+}
 
+#heading4 {
+  font-size: 20vw; 
+}
+
+#heading5 {
+  font-size: 20vw; 
+  margin-bottom: -50px;
+}
+
+#heading6 {
+  font-size: 20vw;
+  margin-bottom: -50px; 
+}
+
+#heading7 {
+  font-size: 20vw;
+  margin-bottom: -50px; 
+}
+
+
+#details0 {
+  font-size: 18vw;
+  font-weight: bold;
+}
+
+#details0-1 {
+  font-size: 18vw;
+}
+
+#details1 {
+  font-size: 18vw;
+  line-height: 90px;
+}
+
+#details2 {
+  font-size: 18vw;
+  line-height: 90px;
+}
+
+#details3 {
+  font-size: 18vw;
+  line-height: 90px;
+}
+
+#details4 {
+  font-size: 18vw;
+  line-height: 90px;
+}
 }
 /**********************************Mobile Complete*********************************************/
 
