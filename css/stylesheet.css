@@ -282,7 +282,6 @@ h3 {
   border-radius: 12px;
 }
 
-
 footer {
   display: grid;
   grid-template-columns: 1.5fr 2fr;
@@ -945,7 +944,7 @@ h3 {
 
 .fourth-section h5 {
   font-size: 3vw;
-  color: rgb(121, 189, 201);
+  color: rgb(70, 154, 190);
   margin-top: 2px;
   font-weight: lighter;
 }
@@ -957,7 +956,6 @@ h3 {
 }
 
 .education {
-  background-color: rgba(146, 179, 192, 0.196);
   border-radius: 12px ;
   padding: 20px;
 }
@@ -968,9 +966,58 @@ h3 {
   color: black; 
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 2.5vw;
+  margin-top: 10px;
+  padding: 20px;
+  background-position: center;
+  border-radius: 12px ;
+}
+
+#subject {
+  font-size: 2.5vw;
+}
+
+#submit {
+  font-size: 2.5vw;
+  border-radius: 9px;
+  padding: 0px ;
+}
 
 
+#msg {
+  height: 50vh;
+  width: 60vw;
+}
 
+#email {
+  width: 40vw;
+  height: 3vh;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+  background-color: rgba(0, 0, 0, 0);
+ 
+}
+
+.logos img {
+width: 10px;
+height: 10px;
+}
+
+#contact-email {
+  font-size: 1vw; 
+  color: rgba(2, 2, 2, 0.911); 
+  font-weight: bold;
+  margin-left: -10%;
+}
 
 
 
@@ -1001,6 +1048,18 @@ h3 {
   margin-bottom: -5px;
 }
 
+#heading5 {
+  font-size: 5vw; 
+  margin-top: 10px;
+  margin-bottom: -5px;
+  line-height: 30px;
+}
+
+#heading6 {
+  font-size: 5vw; 
+  margin-bottom: -5px;
+}
+
 #details0 {
   font-size: 3.5vw;
   color: black;
@@ -1011,7 +1070,21 @@ h3 {
 }
 
 #details1 {
-  font-size: 3.5vw;
+  font-size: 2.5vw;
+}
+
+#details2 {
+  font-size: 2.5vw;
+}
+
+
+#details3 {
+  font-size: 2.5vw;
+}
+
+
+#details4 {
+  font-size: 2.5vw;
 }
 
 input[type="radio"][name="subject"] {
