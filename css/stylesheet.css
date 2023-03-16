@@ -331,10 +331,12 @@ h3 {
 }
 
 footer {
+  
   display: grid;
   grid-template-columns: 1.5fr 2fr;
   color: black;
-  border: black solid 1px;
+  border: white solid 1px;
+  font-size: 2vw;
   margin-top: 30px;
   padding: 20px;
   background-image:url(/images/form-image.png); 
@@ -342,32 +344,50 @@ footer {
   background-repeat: no-repeat;
   text-align: center;
   border-radius: 12px ;
+  background-color: gray;
 }
 
 #contact-form {
-  
   grid-column: 2 / 3;
-  
 }
 
 #subject {
-  font-size: larger;
-  font-weight:bold ;
+  font-size: 2.5vw;
+  font-weight:bold;
+  text-transform: uppercase;
 }
 
 #submit {
   background-color: rgba(162, 220, 237, 0.801);
-  color: black;
-  border-radius: 12px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5vw;
+  font-weight: bold;
+  border-radius: 9px;
   padding: 10px ;
   text-align: center;
   cursor: pointer;
 }
 
+#submit:hover {
+  background-color: rgba(40, 153, 188, 0.966);
+  border: 3px solid white;
+  color: white;
+}
+
 #msg {
+  font-weight: bold;
+  text-align: center;
   height: 50vh;
   width: 30vw;
 }
+
+#email {
+  font-weight: bold;
+  width: 20vw;
+  height: 3vh;
+}
+
+
 
 a {
   color: #000;
@@ -378,9 +398,6 @@ a {
 
 
 
-#submit:hover {
-  background-color: rgba(40, 153, 188, 0.966);
-}
 
 #heading0 {
   font-size: 2.5vw; 
@@ -426,17 +443,19 @@ a {
   font-weight: bold;
 }
 
+#heading7 {
+  font-size: 4vw; 
+  color: rgba(58, 185, 221, 0.801); 
+  font-weight: bold;
+  margin-left: -50%;
+}
+
 #headings8 {
   font-size: 2vw; 
   color: rgba(58, 185, 221, 0.801); 
   font-weight: bold;
 }
-#headings7 {
-  font-size: 2vw; 
-  color: rgba(58, 185, 221, 0.801); 
-  font-weight: bold;
-  margin-left: 8%;
-}
+
 
 #details0 {
   font-size: 1.8vw;
