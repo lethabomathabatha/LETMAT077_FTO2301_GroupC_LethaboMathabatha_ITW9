@@ -1,6 +1,6 @@
 .full-page {
   background-color: rgba(215, 224, 227, 0.34);
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:monospace
 }
 
 
@@ -28,10 +28,11 @@ header {
 
 .background {
   background-image: url(/images/background-brighter.png);
+  background-color: #00000085;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 103vw;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -39,6 +40,7 @@ header {
   position: absolute;
   display: flex;
   flex-direction: row;
+  align-items: stretch;
   top: 0%;
   left: 0%;
   right: 0%;
@@ -46,39 +48,76 @@ header {
   border-radius: 10px;
   text-align:left;
   font-family: 'Courier New', Courier, monospace;
+  
 }
 
 #nav-1 ul {
   list-style: none;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  align-items:start;
   flex-grow: 2;
   gap: 50px;
   text-transform: uppercase; 
   padding: 20px;
-  margin-top: -5%;
 }
 
 #nav-1 li {
-  
+  width: 100%;
 }
 
-header a {
+#nav-1 ul a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-size: 1vw;
+}
+
+#nav-1 ul a:hover {
+  border: 3px solid white;
+}
+
+#nav-1 ul a:active {
+  background-color: white;
+  color: black;
+}
+
+#get-in-touch a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2vw;
 }
 
 #get-in-touch {
-  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 50vh;
+  margin-right: 0vw;
+  background-color: rgba(137, 198, 216, 0.888);
+  padding: 35px;
+  border: 3px solid white;
   text-align: center;
-  justify-content: start;
-  padding: 25px;
-  font-size: 2vw;
-  right: 50%;
-  top: 50%;
+  animation-name: get-in-touch;
 }
+
+@keyframes get-in-touch {
+  0% {
+    transform:scale(1.1);
+  }
+  50% {
+    transform: scale (3);
+  }
+  100% {
+    transform: scale (1.1);
+  }
+}
+
+#get-in-touch:hover {
+  animation-name: get-in-touch;
+  background-color: rgba(127, 181, 197, 0.953);
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
 
 #introduction {
   background-color: rgba(146, 179, 192, 0.695);
@@ -89,27 +128,34 @@ header a {
   gap: 40px;
 }
 
+#introduction:hover {
+  border: 3px solid white;
+}
+
 .title {
   background-color:  ;
-  border-radius: 12px;
+  border-radius: ;
   font-size: 2vw;
-  letter-spacing: 2px;
-  line-height: 24px;
+  letter-spacing: 2.1px;
+  line-height: 2px;
   text-align: center;
   flex: 3;
   padding: 40px;
 }
 
+h3 {
+  font-weight: lighter
+}
+
 .intro{
   background-color: ;
-  border-radius: 12px;
+  border-radius:;
   text-align: left;
   flex: 3;
-
   min-width: 180px;
   padding: 40px;
-  padding-top: 20vh;
-  font-size: 2.5vw;
+  padding-top: 10vh;
+  font-size: 2.1vw;
 }
 .title img {
   border: 3px solid black;
@@ -335,7 +381,11 @@ a {
   color: rgba(14, 14, 14, 0.801); 
   font-weight: bold;
 }
-
+#headings8 {
+  font-size: 2vw; 
+  color: rgba(58, 185, 221, 0.801); 
+  font-weight: bold;
+}
 #headings7 {
   font-size: 2vw; 
   color: rgba(58, 185, 221, 0.801); 
@@ -343,11 +393,7 @@ a {
   margin-left: 8%;
 }
 
-#headings8 {
-  font-size: 2vw; 
-  color: rgba(58, 185, 221, 0.801); 
-  font-weight: bold;
-}
+
 
 #details1 {
   font-size: 1.5vw;
