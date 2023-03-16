@@ -1159,88 +1159,64 @@ input[type=radio] {
   }
  
   #introduction {
-    background-color: rgba(146, 179, 192, 0.695);
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    grid-column: 1 / 3;
-    gap: 40px;
-  }
-  
-  #introduction:hover {
-    animation-name: introduction;
-    background-color: rgba(146, 179, 192, 0.26) ;
-    border: 3px solid white;
+    gap: 30px;
   }
   
   .title {
-    font-size: 1.5vw;
-    letter-spacing: 2.1px;
-    line-height: 2px;
-    text-align: center;
-    flex: 3;
-    padding: 40px;
+    font-size: 2vw;
+    letter-spacing: 2.5px;
+    line-height: 30px;
+    padding: 10px;
+  
   }
   
   .title img {
-    border: 4px solid black;
+    border: 3px solid black;
     width: 200px; 
     height: auto;
   }
   
   h3 {
-    font-weight: lighter
+    font-weight: lighter;
   }
   
   .intro{
-    text-align: left;
-    flex: 3;
-    min-width: 180px;
-    padding: 40px;
-    padding-top: 5vh;
+    padding: 30px;
+    padding-top: 0vh;
   }
   
   .second-section {
     background-color: rgba(146, 179, 192, 0.196);
     border-radius: 12px;
-    font-size: 1.8vw;
+    font-size: 2.8vw;
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 1fr 2fr;
     grid-column: 1 / 3;
-    gap: 40px;
+    gap: 20px;
   }
   
-  .second-section li {
-    list-style: none;
-  }
-  
-  .second-section:hover {
-    animation-name: second-section;
-    background-color: rgba(146, 179, 192, 0.695) ;
-    border: 3px solid white;
-  }
-  
+ 
   .contacts {
     line-height: 1.5;
     margin: 15px;
     color: black; 
-    font-weight: lighter;
+    font-weight: normal;
   }
   
   .languages {
     line-height: 1.5;
     margin: 15px;
     color: black; 
-    font-weight: lighter;
+    font-weight: normal;
   }
   
   .third-section {
     border-radius: 12px;
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 1fr 2fr;
     grid-column: 1 / 3;
-    font-size: 2vw;
-    gap: 40px;
+    font-size: 2.2vw;
+    gap: 30px;
   }
   
   .skills {
@@ -1248,7 +1224,7 @@ input[type=radio] {
     line-height: 0.5;
     color: black; 
     padding: 20px;
-    font-weight: lighter;
+    font-weight: normal;
     border-radius: 12px;
   }
   
@@ -1257,22 +1233,11 @@ input[type=radio] {
     line-height: 0.5;
     color: black; 
     padding: 20px;
-    font-weight: lighter;
+    font-weight: normal;
     border-radius: 12px;
   }
   
-  .third-section li {
-    list-style: none;
-    line-height: 7vh;
-    margin-left: -2.5vw;
-  }
-  
-  .skills:hover {
-    animation-name: skills;
-    background-color: rgba(146, 179, 192, 0.695) ;
-    border: 3px solid white;
-  }
-  
+ 
   .tools:hover {
     animation-name: tools;
     background-color: rgba(146, 179, 192, 0.695) ;
@@ -1281,27 +1246,29 @@ input[type=radio] {
   
   .fourth-section {
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
+    grid-template-columns: 1fr 2fr;
     grid-column: 1 / 3;
     font-size: 2vw;
-    gap: 40px;
-    line-height: 2;
+    gap: 30px;
+    line-height: 2.5;
   }
   
   .fourth-section h4 {
     font-size: 2vw;
     margin-bottom: -25px;
-    line-height: 1;
+    line-height: 1.4;
   }
   
   .fourth-section h5 {
-    font-size: 1.5vw;
-    line-height: 1;
+    font-size: 1.9vw;
+    color: #2a8fa1;
+    line-height: 1.4;
     margin-bottom: -5px;
   }
   
   .fourth-section p {
-    font-size: 1.7vw;
+    font-size: 2vw;
+    line-height: 30px;
   }
   
   .education {
@@ -1310,41 +1277,22 @@ input[type=radio] {
     padding: 20px;
   }
   
-  .education:hover {
-    animation-name: education;
-    background-color: rgba(146, 179, 192, 0.695) ;
-    border: 3px solid white;
-  }
   
-  .experience {
-    padding: 20px;
-    color: black; 
-  }
-  
-  .experience:hover {
-    animation-name: experience;
-    border: 4px solid rgba(146, 179, 192, 0.695);
-    border-radius: 12px;
-  }
   
   footer {
     display: grid;
-    grid-template-columns: 1.5fr 2fr;
-    color: black;
-    border: white solid 1px;
-    font-size: 2vw;
-    margin-top: 30px;
-    padding: 20px;
-    background-image:url(/images/form-image.png); 
-    background-size: cover;
-    background-repeat: no-repeat;
+    grid-template-columns: 1fr;
+    font-size: 3vw;
+    margin-top: 20px;
+    padding: 10px;
+   
     text-align: center;
     border-radius: 12px ;
     background-color: gray;
   }
   
   #contact-form {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
   }
   
   #subject {
@@ -1425,89 +1373,83 @@ input[type=radio] {
   
   
   #heading0 {
-    font-size: 2.5vw; 
-    color: rgba(48, 152, 180, 0.911); 
-    font-weight: bold;
+    font-size: 3vw; 
   }
   
   
   #heading1 {
-    font-size: 2vw; 
+    font-size: 3vw; 
     color: rgba(48, 152, 180, 0.911); 
     font-weight: bold;
   }
   
   #heading2 {
-    font-size: 2vw; 
+    font-size: 3vw; 
     color: rgba(48, 152, 180, 0.911); 
     font-weight: bold;
    
   }
   
   #heading3 {
-    font-size: 2vw; 
+    font-size: 3vw; 
     color: rgba(48, 152, 180, 0.911); 
     font-weight: bold;
   }
   
   #heading4 {
-    font-size: 2vw; 
+    font-size: 3vw; 
     color: rgba(48, 152, 180, 0.911); 
     font-weight: bold;
   }
   
   #heading5 {
-    font-size: 2vw; 
+    font-size: 3vw; 
     color: rgba(48, 152, 180, 0.911); 
     font-weight: bold;
   }
   
   #heading6 {
-    font-size: 2vw; 
+    font-size: 3vw; 
     color: rgba(48, 152, 180, 0.911); 
     font-weight: bold;
   }
   
   #heading7 {
     font-size: 3vw; 
-    color: rgba(48, 152, 180, 0.911); 
-    font-weight: bold;
   }
   
   #headings8 {
-    font-size: 2vw; 
-    color: rgba(58, 185, 221, 0.801); 
-    font-weight: bold;
+    font-size: 3vw; 
   }
   
   
   #details0 {
-    font-size: 1.8vw;
+    font-size: 2.5vw;
     color: black;
   }
   
   #details0-1 {
-    font-size: 1.8vw;
+    font-size:2.5vw;
     color: black;
   }
   
   #details1 {
-    font-size: 1.6vw;
+    font-size: 1.9vw;
     color: black;
   }
   
   #details2 {
-    font-size: 1.6vw;
+    font-size: 1.9vw;
     color: black;
   }
   
   #details3 {
-    font-size: 1.6vw;
+    font-size: 1.9vw;
     color: black;
   }
   
   #details4 {
-    font-size: 1.6vw;
+    font-size: 1.9vw;
     color: black;
   }
   
