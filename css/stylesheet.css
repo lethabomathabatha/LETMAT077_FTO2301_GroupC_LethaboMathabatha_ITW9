@@ -129,18 +129,26 @@ header {
 }
 
 #introduction:hover {
+  animation-name: introduction;
+  background-color: rgba(146, 179, 192, 0.26) ;
   border: 3px solid white;
 }
 
 .title {
   background-color:  ;
   border-radius: ;
-  font-size: 2vw;
+  font-size: 1.5vw;
   letter-spacing: 2.1px;
   line-height: 2px;
   text-align: center;
   flex: 3;
   padding: 40px;
+}
+
+.title img {
+  border: 4px solid black;
+  width: 200px; 
+  height: auto;
 }
 
 h3 {
@@ -154,14 +162,12 @@ h3 {
   flex: 3;
   min-width: 180px;
   padding: 40px;
-  padding-top: 10vh;
-  font-size: 2.1vw;
+  padding-top: 5vh;
 }
-.title img {
-  border: 3px solid black;
-  width: 200px; 
-  height: auto;
-}
+
+
+
+
 .title h1 {
   
 }
@@ -338,9 +344,9 @@ a {
   background-color: rgba(40, 153, 188, 0.966);
 }
 
-#headings {
-  font-size: 20px; 
-  color: rgba(58, 185, 221, 0.801); 
+#heading0 {
+  font-size: 2.5vw; 
+  color: rgba(48, 152, 180, 0.911); 
   font-weight: bold;
 }
 
@@ -393,7 +399,15 @@ a {
   margin-left: 8%;
 }
 
+#details0 {
+  font-size: 1.8vw;
+  color: black;
+}
 
+#details0-1 {
+  font-size: 1.8vw;
+  color: black;
+}
 
 #details1 {
   font-size: 1.5vw;
