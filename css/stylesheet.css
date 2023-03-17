@@ -1,6 +1,7 @@
 .full-page {
   background-color: rgba(215, 224, 227, 0.34);
-  font-family:monospace
+  font-family:monospace;
+  margin: 10px;
 }
 
 
@@ -8,12 +9,10 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
-  
 }
 
 header {
   flex: 1;
-  
   line-height: 0.4px;
   letter-spacing: 1px;
   color: black;
@@ -167,6 +166,7 @@ h3 {
 
 .second-section li {
   list-style: none;
+  margin-left: -25px;
 }
 
 .second-section:hover {
@@ -261,7 +261,7 @@ h3 {
 
 .education {
   background-color: rgba(146, 179, 192, 0.196);
-  border-radius: 12px ;
+  border-radius: 12px;
   padding: 20px;
 }
 
@@ -284,7 +284,7 @@ h3 {
 
 footer {
   display: grid;
-  grid-template-columns: 1.5fr 2fr;
+  grid-template-columns: 1fr;
   color: black;
   border: white solid 1px;
   font-size: 2vw;
@@ -299,7 +299,8 @@ footer {
 }
 
 #contact-form {
-  grid-column: 2 / 3;
+
+  width: 100%;
 }
 
 #subject {
@@ -323,6 +324,10 @@ footer {
   background-color: rgba(40, 153, 188, 0.966);
   border: 3px solid white;
   color: white;
+}
+
+footer:hover {
+  border: 3px solid rgba(40, 153, 188, 0.966);
 }
 
 #msg {
@@ -1109,7 +1114,6 @@ input[type=radio] {
   }
   
   .full-page {
-    
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
@@ -1164,10 +1168,10 @@ input[type=radio] {
   
   .title {
     font-size: 2vw;
-    letter-spacing: 2.5px;
-    line-height: 30px;
+    letter-spacing: .5px;
+    line-height: 40px;
     padding: 10px;
-  
+    margin: 25px;
   }
   
   .title img {
@@ -1178,24 +1182,30 @@ input[type=radio] {
   
   h3 {
     font-weight: lighter;
+    margin-top: 0px;
+  }
+
+  h1 {
+    margin-top: -30px;
   }
   
   .intro{
     padding: 30px;
     padding-top: 0vh;
+
   }
   
   .second-section {
     background-color: rgba(146, 179, 192, 0.196);
     border-radius: 12px;
-    font-size: 2.8vw;
+    font-size: 2vw;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     grid-column: 1 / 3;
-    gap: 20px;
+    gap: 30px;
+   
   }
   
- 
   .contacts {
     line-height: 1.5;
     margin: 15px;
@@ -1205,15 +1215,15 @@ input[type=radio] {
   
   .languages {
     line-height: 1.5;
-    margin: 15px;
     color: black; 
     font-weight: normal;
+  
   }
   
   .third-section {
     border-radius: 12px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     grid-column: 1 / 3;
     font-size: 2.2vw;
     gap: 30px;
@@ -1246,7 +1256,7 @@ input[type=radio] {
   
   .fourth-section {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2fr;
     grid-column: 1 / 3;
     font-size: 2vw;
     gap: 30px;
@@ -1256,19 +1266,27 @@ input[type=radio] {
   .fourth-section h4 {
     font-size: 2vw;
     margin-bottom: -25px;
-    line-height: 1.4;
+    line-height: 2;
+   
   }
   
   .fourth-section h5 {
     font-size: 1.9vw;
     color: #2a8fa1;
-    line-height: 1.4;
-    margin-bottom: -5px;
+    line-height: 1;
+    
   }
   
   .fourth-section p {
     font-size: 2vw;
     line-height: 30px;
+    margin-bottom: 60px;
+  }
+
+  .fourth-section li {
+    font-size: 2vw;
+    line-height: 30px;
+    margin-bottom: 20px;
   }
   
   .education {
@@ -1277,27 +1295,28 @@ input[type=radio] {
     padding: 20px;
   }
   
-  
-  
   footer {
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr;
-    font-size: 3vw;
+    font-size: 2vw;
     margin-top: 20px;
-    padding: 10px;
-   
-    text-align: center;
-    border-radius: 12px ;
-    background-color: gray;
+    padding: 20px;
+    background-image:url(/images/form-image.png); 
+    background-position: center;
+    border-radius: 20px;
   }
   
   #contact-form {
-    grid-column: 1 / 2;
+    width: 330%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: -20px;
+    margin-bottom: ;
+    padding: 0px;
   }
   
   #subject {
-    font-size: 3vw;
-    
+    font-size: 2vw;
   }
   
   #submit {
@@ -1306,6 +1325,7 @@ input[type=radio] {
     font-size: 1.5vw;
     font-weight: bold;
     border-radius: 9px;
+    margin-bottom:20px ;
     padding: 10px ;
     text-align: center;
     cursor: pointer;
@@ -1340,15 +1360,6 @@ input[type=radio] {
     height: 40px;
   }
   
-  .logos img:hover {
-    animation-name: logos;
-    animation-duration: 0.2s;
-    animation-iteration-count: 2;
-    animation-play-state:running;
-  }
-  
- 
-  
   #heading0 {
     font-size: 3vw; 
   }
@@ -1358,13 +1369,14 @@ input[type=radio] {
     font-size: 3vw; 
     color: rgba(48, 152, 180, 0.911); 
     font-weight: bold;
+    margin-left: 10px;
   }
   
   #heading2 {
     font-size: 3vw; 
     color: rgba(48, 152, 180, 0.911); 
     font-weight: bold;
-   
+    margin-left: 0px;
   }
   
   #heading3 {
@@ -1401,12 +1413,12 @@ input[type=radio] {
   
   
   #details0 {
-    font-size: 2.5vw;
+    font-size: 2.1vw;
     color: black;
   }
   
   #details0-1 {
-    font-size:2.5vw;
+    font-size:2.1vw;
     color: black;
   }
   
@@ -1435,27 +1447,6 @@ input[type=radio] {
     color: black;
   }
   
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 input[type=radio] {
   width: 1%;
@@ -1468,11 +1459,11 @@ input[type=radio] {
   border: 0px solid black;
 }
 
-} */
+} 
 /**********************************Laptop Complete******************************************/
 
 /**********************************4K*************************************************/
-@media only screen and (min-width: 1441px) {
+/*@media only screen and (min-width: 1441px) {
   .full-page {
     background-color: rgba(240, 227, 230, 0.458);
   }
