@@ -497,6 +497,7 @@ a {
   }
 
   .background {
+   width: 100%;
    
   }
   
@@ -507,7 +508,6 @@ a {
     letter-spacing: 1px;
     color: black;
     padding-bottom: 20px;
-
   }
 
   #nav-1 {
@@ -585,11 +585,10 @@ a {
   min-width: 180px;
   padding: 20px;
   padding-top: 0vh;
-
 }
 
 .second-section {
-  font-size: 18vw;
+  font-size: 15vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-column: 1;
@@ -600,7 +599,7 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   grid-column: 1;
-  font-size: 18vw;
+  font-size: 15vw;
 }
 
 .third-section li {
@@ -618,18 +617,18 @@ a {
 }
 
 .fourth-section h4 {
-  font-size: 20vw;
+  font-size: 18vw;
   margin-bottom: -25px;
 }
 
 .fourth-section h5 {
-  font-size: 17vw;
+  font-size: 15vw;
   margin-top: 40px;
   color: rgba(24, 136, 164, 0.997);
 }
 
 .fourth-section p {
-  font-size: 17vw;
+  font-size: 15vw;
   margin-top: 0px;
 }
 
@@ -747,12 +746,12 @@ height: 100px;
 
 
 #details0 {
-  font-size: 18vw;
+  font-size: 16vw;
   font-weight: bold;
 }
 
 #details0-1 {
-  font-size: 18vw;
+  font-size: 16vw;
 }
 
 #details1 {
@@ -761,22 +760,22 @@ height: 100px;
 }
 
 #details2 {
-  font-size: 18vw;
+  font-size: 16vw;
   line-height: 90px;
 }
 
 #details3 {
-  font-size: 18vw;
+  font-size: 16vw;
   line-height: 90px;
 }
 
 #details4 {
-  font-size: 18vw;
+  font-size: 16vw;
   line-height: 90px;
 }
 h3 {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 19vw;
+  font-size: 16vw;
 }
 }
 
